@@ -186,6 +186,21 @@ blockquote {
   color: #5eb63c;
 }
 
+.main-link.member {
+  border: 1px solid transparent;
+  background-color: #5eb63c;
+  opacity: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  color: #fff;
+}
+
+.main-link.member:hover {
+  border-color: #5eb63c;
+  background-color: #fff;
+  color: #5eb63c;
+}
+
 .nav-menu {
   width: 300px;
   height: 100%;
@@ -297,6 +312,13 @@ blockquote {
   background-image: none;
 }
 
+.section-hero.title.about.image {
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: none;
+}
+
 .section-hero.full-width {
   position: absolute;
   left: 0px;
@@ -384,6 +406,10 @@ blockquote {
   color: #5eb63c;
   font-size: 25px;
   line-height: 34px;
+}
+
+.bottom-margin-small.center {
+  text-align: center;
 }
 
 .bottom-margin-medium {
@@ -977,6 +1003,18 @@ blockquote {
   color: #821a73;
 }
 
+.button.green-button:hover {
+  border-color: #5eb63c;
+}
+
+.button.green-button.extra {
+  margin-top: 20px;
+}
+
+.button.green-button.extra:hover {
+  background-color: #ededed;
+}
+
 .featured-news-divlink {
   padding: 30px;
   border-bottom-style: none;
@@ -1293,6 +1331,10 @@ blockquote {
   margin-left: auto;
 }
 
+.popup-bracket.align-left {
+  text-align: left;
+}
+
 .pop-up-header {
   margin-bottom: 30px;
   text-align: center;
@@ -1572,6 +1614,31 @@ blockquote {
   font-weight: 700;
 }
 
+.bemember {
+  display: block;
+  width: 80%;
+  height: 195px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  border: 1px solid transparent;
+  background-color: #5eb63c;
+  text-align: center;
+}
+
+.bemember:hover {
+  border-color: #5eb63c;
+  background-color: transparent;
+  color: #5eb63c;
+}
+
+.journal-img {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #5eb63c;
+}
+
 html.w-mod-js *[data-ix="preload"] {
   display: block;
 }
@@ -1678,6 +1745,7 @@ html.w-mod-js *[data-ix="fly-in-load-4"] {
 html.w-mod-js *[data-ix="fade-in-preloader"] {
   opacity: 0;
 }
+
 
 /* START bootstrap table style */
 
@@ -1928,6 +1996,7 @@ table th[class*="col-"] {
   }
 
 /* END bootstrap table style */
+
 
 @media (max-width: 991px) {
   .small-text.white {
@@ -2472,6 +2541,23 @@ table th[class*="col-"] {
   .overview {
     font-size: 12px;
     line-height: 22px;
+  }
+  .align-left.logo {
+    text-align: center;
+  }
+  .footer-brand {
+    display: block;
+    float: none;
+  }
+  .popup-bracket.align-left {
+    width: 100%;
+  }
+  .footer-menu {
+    margin-left: 0px;
+    float: none;
+  }
+  .icons {
+    width: 70%;
   }
 }
 
