@@ -1639,6 +1639,12 @@ blockquote {
   border: 2px solid #5eb63c;
 }
 
+.premium {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 html.w-mod-js *[data-ix="preload"] {
   display: block;
 }

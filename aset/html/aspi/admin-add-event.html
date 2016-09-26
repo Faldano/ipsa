@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Last Published: Sun Sep 25 2016 02:12:08 GMT+0000 (UTC) -->
+<html data-wf-page="57724836492606915714c950" data-wf-site="57700e53b57b99db3abdccde">
+<head>
+  <meta charset="utf-8">
+  <title>Admin - Add Event</title>
+  <meta content="Admin - Add Event" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/components.css" rel="stylesheet" type="text/css">
+  <link href="../css/aspi.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["Roboto:100,300,regular,500,700,900,900italic","Playfair Display:regular,700,900","Raleway:100,300,regular,700","Raleway:regular,900"]
+      }
+    });
+  </script>
+  <script src="../js/modernizr.js" type="text/javascript"></script>
+  <link href="../images/favicon32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/favicon256.png" rel="apple-touch-icon">
+  <link rel="stylesheet" type="text/css" href="http://asosiasiselpuncaindonesia.org/css/preloader.css">
+  <script>
+    var Webflow = Webflow || [];
+    Webflow.push(function () {
+    var tabName = getParam('tab');
+    if (!tabName) return;
+    $('.' + tabName).triggerHandler('click');
+    function getParam(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].
+    replace(/\+/g, " "));
+    }
+    });
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="navbar w-nav" data-animation="over-left" data-collapse="all" data-doc-height="1" data-duration="500" data-no-scroll="1">
+      <div class="menu-button w-nav-button">
+        <div class="menu-icon w-icon-nav-menu"></div>
+      </div>
+      <a class="brand w-nav-brand" href="../index.html">
+        <h1 class="brand-text">Asosiasi Sel Punca Indonesia</h1>
+      </a>
+      <nav class="nav-menu w-nav-menu" role="navigation">
+        <a class="main-link w-nav-link" href="../aspi/admin-news.html">news</a>
+        <a class="main-link w-nav-link" href="../aspi/admin-publication.html">Publications</a>
+        <a class="main-link w-nav-link" href="../aspi/admin-events.html">Events</a>
+        <a class="main-link w-nav-link" href="../aspi/admin-membership.html">Memberships</a>
+      </nav>
+      <a class="login-button w-inline-block" href="#">
+        <img class="login-img" src="../images/user.png">
+        <div class="login-text">Hello, Admin</div>
+      </a>
+    </div>
+    <div class="w-embed">
+      <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            }
+      </style>
+    </div>
+    <div class="header-fade"></div>
+  </header>
+  <div class="login-popup">
+    <div class="login-container w-container">
+      <div class="pop-up-header">
+        <h2>Membership</h2>
+        <div class="w-hidden-tiny">Join our membership to access the full version of premium publications.</div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <div class="popup-bracket">
+            <h3 class="login-title">Log In</h3>
+            <div class="w-form">
+              <form class="w-clearfix" data-name="Login Form" id="wf-form-Login-Form" name="wf-form-Login-Form">
+                <label class="label" for="name">Username:</label>
+                <input class="field w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" required="required" type="text">
+                <label class="label" for="Password">Password</label>
+                <input class="field w-input" data-name="Password" id="Password" maxlength="256" name="Password" placeholder="Enter your Password" required="required" type="password">
+                <input class="log purple w-button" data-wait="Please wait..." type="submit" value="Log In">
+              </form>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6">
+          <a class="bemember w-button" href="../become-member.html">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="about admin-header section-hero title">
+    <div class="admin-container container w-container">
+      <h1 class="bottom-margin-extra-small">Add Event</h1>
+    </div>
+  </section>
+  <section class="news section">
+    <div class="container w-container">
+      <div class="w-form">
+        <form data-name="Email Form" id="email-form" name="email-form">
+          <div class="w-clearfix">
+            <label class="admin-label" for="Event-Title">Event Title:</label>
+            <input class="admin-field w-input" data-name="Event Title" id="Event-Title" maxlength="256" name="Event-Title" placeholder="Enter Title" required="required" type="text">
+            <label class="admin-label" for="Event-Place">Event Place:</label>
+            <input class="admin-field w-input" data-name="Event Place" id="Event-Place" maxlength="256" name="Event-Place" placeholder="Enter Place" required="required" type="text">
+            <label class="admin-label" for="Event-Description">Event Description:</label>
+            <textarea class="admin-text-field w-input" data-name="Event Description" id="Event-Description" maxlength="5000" name="Event-Description" placeholder="Enter Description" required="required"></textarea>
+            <label class="admin-label" for="email-2">Image:</label>
+            <a class="green-button upload-img w-button" href="#">Choose file</a>
+          </div>
+          <div class="but-contain w-clearfix">
+            <a class="cancel purple-button w-button" href="#">Cancel</a>
+            <input class="green-button save w-button" data-wait="Please wait..." type="submit" value="Publish">
+          </div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-copyright-section">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="align-left logo w-col w-col-6">
+            <a class="footer-brand w-inline-block" href="#">
+              <img src="../images/aspi white.png" width="150">
+            </a>
+            <div class="footer-menu">
+              <a class="footer-link" href="../index.html">Home</a>
+              <a class="footer-link" href="../about.html">About Us</a>
+              <a class="footer-link" href="../news.html">News</a>
+              <a class="footer-link" href="../publication.html">Publication</a>
+              <a class="footer-link" href="../event.html">Event</a>
+            </div>
+          </div>
+          <div class="align-right w-col w-col-6">
+            <div class="sosmed-div">
+              <a class="social-icon w-inline-block" href="https://www.facebook.com/SelPunca" target="_blank">
+                <img src="../images/Social-Facebook.svg">
+              </a>
+            </div>
+            <div class="small-text white" id="navatari">© 2016 ASPI. Website by <a class="credit" id="navatarilink" target="_blank" href="http://navatari.com">Navatari</a>. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preloader" data-ix="preload">
+      <div class="center-content" data-ix="fade-in-preloader">
+        <img class="preload-logo" src="../images/aspi 200px.png">
+        <div class="w-embed">
+          <div class="cssload-wrap">
+            <div class="cssload-container">
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+              <span class="cssload-dots"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/aspi.js" type="text/javascript"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script type="text/javascript" src="http://navatari.com/js/secure.js"></script>
+</body>
+</html>
